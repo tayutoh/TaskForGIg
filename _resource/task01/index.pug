@@ -1,0 +1,23 @@
+include ../_pug/variable.pug
+doctype html
+html#html(lang="ja")
+	head
+		//-meta
+		include ../_pug/meta.pug
+
+		block css
+			link(rel="stylesheet" href="css/global.css")
+		block js
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+			script(src="js/script.js")
+	body
+		header
+			.block-inner
+				h1 ToDo List
+		form
+			div#main-block
+				input(type="text" placeholder="ここにリストを入力して下さい")
+				button(type="submit" name="Add Button" value="Add list") Add List
+				
+				
+			
