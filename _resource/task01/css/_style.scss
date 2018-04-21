@@ -42,7 +42,7 @@ header {
 }
 
 #main-block {
-	width: 500px;
+	width: 400px;
 	margin: 10px auto;
 	@include clearfix;
 	.main-block_listBox {
@@ -50,6 +50,19 @@ header {
 			border-bottom: dashed 1px #ccc;
 			padding-bottom: 3px;
 			margin-bottom: 10px;
+			&Txt,
+			&Btn,
+			& input[type="checkbox"]{
+				display: inline-block;
+				box-sizing: border-box;
+			}
+			&Txt{
+				width: calc(70% - 15px);
+				margin-right: 3px;
+			}
+			&Btn{
+				width: 29%;
+			}
 		}
 	}
 	& input[type="text"],
@@ -59,7 +72,7 @@ header {
 	& input[type="text"] {
 		border: 1px solid #ccc;
 		padding: 3px 5px;
-		margin-left: 165px;
+		margin-left: 65px;
 		margin-right: 5px;
 		border-radius: 5px;
 		width: 250px;

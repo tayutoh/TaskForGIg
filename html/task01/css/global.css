@@ -35,15 +35,21 @@ header .block-inner { display: table-cell; text-align: center; vertical-align: m
 
 header h1 { color: #000; }
 
-#main-block { width: 500px; margin: 10px auto; }
+#main-block { width: 400px; margin: 10px auto; }
 
 #main-block::after { content: ""; display: block; clear: both; }
 
 #main-block .main-block_listBoxList { border-bottom: dashed 1px #ccc; padding-bottom: 3px; margin-bottom: 10px; }
 
+#main-block .main-block_listBoxListTxt, #main-block .main-block_listBoxListBtn, #main-block .main-block_listBoxList input[type="checkbox"] { display: inline-block; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#main-block .main-block_listBoxListTxt { width: calc(70% - 15px); margin-right: 3px; }
+
+#main-block .main-block_listBoxListBtn { width: 29%; }
+
 #main-block input[type="text"], #main-block button { float: left; }
 
-#main-block input[type="text"] { border: 1px solid #ccc; padding: 3px 5px; margin-left: 165px; margin-right: 5px; border-radius: 5px; width: 250px; height: 35px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 13px; font-size: 1.3rem; }
+#main-block input[type="text"] { border: 1px solid #ccc; padding: 3px 5px; margin-left: 65px; margin-right: 5px; border-radius: 5px; width: 250px; height: 35px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 13px; font-size: 1.3rem; }
 
 #main-block input[type="text"]:placeholder { color: #ccc; }
 
