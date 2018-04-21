@@ -1,0 +1,36 @@
+{
+  "name": "TaskForGIg",
+  "version": "1.0.0",
+  "description": "For Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blueray777/TaskForGIg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blueray777/TaskForGIg/issues"
+  },
+  "homepage": "https://github.com/Blueray777/TaskForGIg#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.7",
+    "connect-ssi": "^1.1.1",
+    "fs": "0.0.1-security",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-data": "^1.3.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}
