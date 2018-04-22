@@ -35,36 +35,64 @@ header .block-inner { display: table-cell; text-align: center; vertical-align: m
 
 header h1 { color: #000; }
 
-#main-block { width: 400px; margin: 10px auto; }
+#form-block { width: 335px; margin: 10px auto 20px; }
 
-#main-block::after { content: ""; display: block; clear: both; }
+#form-block::after { content: ""; display: block; clear: both; }
 
-#main-block .main-block_listBoxList { border-bottom: dashed 1px #ccc; padding-bottom: 3px; margin-bottom: 10px; }
+#form-block input[type="text"], #form-block button { float: left; }
 
-#main-block .main-block_listBoxListTxt, #main-block .main-block_listBoxListBtn, #main-block .main-block_listBoxList input[type="checkbox"] { display: inline-block; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#form-block input[type="text"] { border: 1px solid #ccc; padding: 3px 5px; margin-right: 5px; border-radius: 5px; width: 250px; height: 35px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 13px; font-size: 1.3rem; }
 
-#main-block .main-block_listBoxListTxt { width: calc(70% - 15px); margin-right: 3px; }
+#form-block input[type="text"]:placeholder { color: #ccc; }
 
-#main-block .main-block_listBoxListBtn { width: 29%; }
+#form-block input[type="text"]:foucus:placeholder { color: transparent; }
 
-#main-block input[type="text"], #main-block button { float: left; }
+#form-block input[type="text"]::-webkit-input-placeholder { color: #ccc; }
 
-#main-block input[type="text"] { border: 1px solid #ccc; padding: 3px 5px; margin-left: 65px; margin-right: 5px; border-radius: 5px; width: 250px; height: 35px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 13px; font-size: 1.3rem; }
+#form-block input[type="text"]:focus::-webkit-input-placeholder { color: transparent; }
 
-#main-block input[type="text"]:placeholder { color: #ccc; }
+#form-block input[type="text"]:-moz-placeholder { color: #ccc; opacity: 1; }
 
-#main-block input[type="text"]:foucus:placeholder { color: transparent; }
+#form-block input[type="text"]:foucus:-moz-placeholder { color: transparent; }
 
-#main-block input[type="text"]::-webkit-input-placeholder { color: #ccc; }
+#form-block input[type="text"]:-ms-input-placeholder { color: #ccc; }
 
-#main-block input[type="text"]:focus::-webkit-input-placeholder { color: transparent; }
+#form-block input[type="text"]:focus::-ms-placeholder { color: transparent; }
 
-#main-block input[type="text"]:-moz-placeholder { color: #ccc; opacity: 1; }
+#form-block button { width: 80px; height: 35px; border: 1px solid #ccc; border-radius: 5px; background-color: #eee; color: #666; font-size: 13px; font-size: 1.3rem; }
 
-#main-block input[type="text"]:foucus:-moz-placeholder { color: transparent; }
+.main-block_listBox { width: 400px; margin: 0 auto; }
 
-#main-block input[type="text"]:-ms-input-placeholder { color: #ccc; }
+.main-block_listBoxList { border-bottom: dashed 1px #ccc; padding: 0 5px 3px; margin-bottom: 10px; }
 
-#main-block input[type="text"]:focus::-ms-placeholder { color: transparent; }
+.main-block_listBoxList::after { content: ""; display: block; clear: both; }
 
-#main-block button { width: 80px; height: 35px; border: 1px solid #ccc; border-radius: 5px; background-color: #eee; color: #666; font-size: 13px; font-size: 1.3rem; }
+.main-block_listBoxListTxt, .main-block_listBoxListBtn, .main-block_listBoxList input[type="checkbox"] { display: block; -webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: middle; float: left; }
+
+.main-block_listBoxListTxt, .main-block_listBoxList input[type="checkbox"] { float: left; }
+
+.main-block_listBoxListTxt, .main-block_listBoxListBtn { padding: 5px 0; font-size: 13px; font-size: 1.3rem; }
+
+.main-block_listBoxListTxt { width: calc(81% - 40px); position: relative; }
+
+.main-block_listBoxListTxt::before { position: absolute; content: ""; display: block; top: calc(50% - 13px); left: -25px; width: 7px; height: 15px; border-right: 3px solid #333; border-bottom: 3px solid #333; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); display: none; }
+
+.main-block_listBoxListBtn { float: right; width: 19%; text-align: center; background-color: #ff3300; color: #fff; border-radius: 5px; cursor: pointer; }
+
+.main-block_listBoxList input[type="checkbox"] { border: 1px solid #ccc; width: 30px; height: 30px; margin-right: 5px; }
+
+.main-block_listBoxList input[type="checkbox"]:checked + .main-block_listBoxListTxt::before { display: block; }
+
+.main-block_listBoxList.complete input[type="checkbox"] { border: 1px solid #ccc; background-color: #eee; }
+
+.complete .main-block_listBoxListTxt { color: #999; text-decoration: line-through; }
+
+.complete .main-block_listBoxListTxt::before { border-right: 3px solid #ccc; border-bottom: 3px solid #ccc; }
+
+.box-removeMess { display: block; width: 400px; margin: 25px auto; display: none; text-align: center; font-size: 14px; font-size: 1.4rem; }
+
+.box-removeMessTxt { color: #000; }
+
+.box-removeMessBtn { display: inline-block; background-color: #e1a2ba; color: #fff; width: 100px; padding: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; margin-top: 10px; border-radius: 5px; cursor: pointer; }
+
+.box-removeMessVisible { display: block; }

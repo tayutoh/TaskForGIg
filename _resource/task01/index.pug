@@ -14,10 +14,13 @@ html#html(lang="ja")
 		header
 			.block-inner
 				h1 ToDo List
-		form
-			div#main-block
-				input(type="text" placeholder="ここにリストを入力して下さい")
-				button(type="submit" name="Add Button" value="Add list") Add List
+		form#form-block
+			input(type="text" placeholder="ここにリストを入力して下さい")
+			button(type="submit" name="Add Button" value="Add list") Add ToDo
+		dl.box-removeMess
+			dt.box-removeMessTxt 削除してもよいですか？
+			dd.box-removeMessBtn Yes
+				
 				
 				
 			
