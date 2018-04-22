@@ -2,7 +2,29 @@ $(function () {
 	var $form = $('#form-block'),
 		$addList = $('button'),
 		$inputList = $('input[type=text]'),
-		$listArea = $('<ul class="main-block_listBox">');
+		$listArea = $('<ul class="main-block_listBox">'),
+		strageList = localStorage['todo.list'];
+		
+		if(strageList){
+			JSON.parse(strageList).forEach(function(item){
+			makeList(item.text,item.complete);
+			});
+		}
+	
+	function updateStrage(){
+		var list = [];
+		//現在のリスト情報を全て取得する
+		$listArea.find('li').each(function(){
+			var $item = $(this);
+			
+			list.push({
+				text:$item.find('.main-block_listBoxListTxt').text(),
+				complete:$item.hasClass('complete')
+			});
+		});
+		
+		localStorage['todo.list'] = JSON.stringify(list);
+	}
 		
 	//ToDoをul.listAreaに追加する	
 	function makeList(text){
@@ -26,6 +48,8 @@ $(function () {
 			} else {
 				$li.removeClass('complete');
 			}
+			//ストレージの更新
+			updateStrage();
 			
 		});
 		
@@ -37,7 +61,8 @@ $(function () {
 				$li.remove();
 				$removeMessege.removeClass('box-removeMessVisible');
 			});
-			
+			//ストレージの更新
+			updateStrage();
 		});
 	}
 	
@@ -55,9 +80,13 @@ $(function () {
 		
 		//input[type="text"]の中を空にする
 		$inputList.val('');
+		//ストレージの更新
+		updateStrage();
 	}).one('submit',function(){
 		//liを追加するulを最初のリスト追加時のみ追加する
 		$($form).after($listArea);
 		return false;
 	});
+	
+	
 });
