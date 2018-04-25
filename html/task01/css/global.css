@@ -77,7 +77,9 @@ header h1 { color: #000; }
 
 .main-block_listBoxListTxt::before { position: absolute; content: ""; display: block; top: calc(50% - 13px); left: -25px; width: 7px; height: 15px; border-right: 3px solid #333; border-bottom: 3px solid #333; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); display: none; }
 
-.main-block_listBoxListBtn { float: right; width: 19%; text-align: center; background-color: #ff3300; color: #fff; border-radius: 5px; cursor: pointer; }
+.main-block_listBoxListBtn { float: right; width: 19%; text-align: center; background-color: #808080; color: #fff; border-radius: 5px; cursor: pointer; }
+
+.main-block_listBoxListBtn:hover { background-color: #e1a2ba; }
 
 .main-block_listBoxList input[type="checkbox"] { border: 1px solid #ccc; width: 30px; height: 30px; margin-right: 5px; }
 
@@ -93,6 +95,8 @@ header h1 { color: #000; }
 
 .box-removeMessTxt { color: #000; }
 
-.box-removeMessBtn { display: inline-block; background-color: #e1a2ba; color: #fff; width: 100px; padding: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; margin-top: 10px; border-radius: 5px; cursor: pointer; }
+.box-removeMessBtn { display: inline-block; background-color: #808080; color: #fff; width: 100px; padding: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; margin-top: 10px; border-radius: 5px; cursor: pointer; }
+
+.box-removeMessBtn:hover { background-color: #376fb8; }
 
 .box-removeMessVisible { display: block; }
