@@ -1,0 +1,106 @@
+a:link,
+a:visited,
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+input,
+button {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+header {
+	display: table;
+	width: 100%;
+	height: 40px;
+	padding: 15px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 99999;
+	.block-inner {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		border-bottom: 1px solid #eee;
+	}
+	h1 {
+		color: #000;
+		font-size: 30px;
+	}
+}
+
+#form-block {
+	width: 100%;
+	margin: 10px auto 20px;
+	text-align: center;
+	@include clearfix;
+	& input[type="text"],
+	& button {
+		display: inline-block;
+	}
+	& input[type="text"] {
+		border: 1px solid #ccc;
+		padding: 3px 5px;
+		margin-right: 5px;
+		border-radius: 5px;
+		width: 225px;
+		height: 35px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		font-size: 13px;
+		font-size: 1.3rem;
+		&:placeholder {
+			color: #ccc;
+		}
+		&:foucus:placeholder {
+			color: transparent;
+		}
+		&::-webkit-input-placeholder {
+			color: #ccc;
+		}
+		&:focus::-webkit-input-placeholder {
+			color: transparent;
+		}
+		&:-moz-placeholder {
+			color: #ccc;
+			opacity: 1;
+		}
+		&:foucus:-moz-placeholder {
+			color: transparent;
+		}
+		&:-ms-input-placeholder {
+			color: #ccc;
+		}
+		&:focus::-ms-placeholder {
+			color: transparent;
+		}
+	}
+	& button {
+		width: 80px;
+		height: 35px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #eee;
+		color: #666;
+		font-size: 13px;
+		font-size: 1.3rem;
+	}
+	@include mq(mdMax){
+		& button:hover {
+			opacity: 0.5;
+		}
+	}
+}
+

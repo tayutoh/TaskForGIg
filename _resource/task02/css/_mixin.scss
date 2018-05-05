@@ -1,0 +1,21 @@
+$breakpoints: ( 
+	'sm': 'screen and (min-width: 320px)',
+	'md': 'screen and (min-width: 800px)',
+	'mdMax': 'screen and (max-width: 799px)',
+) !default;
+
+// media Query
+@mixin mq($breakpoint: md) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+//clearfix: @include clearfix;
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
