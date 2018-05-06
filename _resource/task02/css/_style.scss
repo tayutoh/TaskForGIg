@@ -100,6 +100,7 @@ button {
 		color: #666;
 		font-size: 13px;
 		font-size: 1.3rem;
+		cursor: pointer;
 	}
 	@include mq(){
 		& button:hover {
