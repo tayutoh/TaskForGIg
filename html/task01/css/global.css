@@ -1,278 +1,64 @@
 @charset "UTF-8";
 /** * Reset CSS * **/
-/* line 4, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 13, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-/* line 14, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-html {
-  overflow-y: scroll;
-  font-size: 62.5%; }
+html { overflow-y: scroll; font-size: 62.5%; }
 
-/* line 18, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-body {
-  font-size: 1rem;
-  line-height: 1.5;
-  -webkit-text-size-adjust: none !important;
-  color: #333;
-  font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Arial,verdana,sans-serif; }
+body { font-size: 1rem; line-height: 1.5; -webkit-text-size-adjust: none !important; color: #333; font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Arial,verdana,sans-serif; }
 
-/* line 25, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-html, body {
-  position: relative;
-  height: 100%; }
+html, body { position: relative; height: 100%; }
 
-/* line 29, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
-/* line 30, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-blockquote, q {
-  quotes: none; }
+blockquote, q { quotes: none; }
 
-/* line 31, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-/* line 35, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-input, textarea, button {
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%; }
+input, textarea, button { margin: 0; padding: 0; font-size: 62.5%; }
 
-/* line 40, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 44, /usr/local/development/TaskForGIg/_resource/task01/css/_reset.scss */
-a:focus {
-  outline: none; }
+a:focus { outline: none; }
 
-/* line 1, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-a:link,
-a:visited,
-a:hover {
-  color: #333;
-  text-decoration: none; }
+a:link, a:visited, a:hover { color: #333; text-decoration: none; }
 
-/* line 8, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-a:hover {
-  opacity: 0.6; }
+a:hover { opacity: 0.6; }
 
-/* line 12, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-input,
-button {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
+input, button { margin: 0; padding: 0; outline: none; border: 0; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
-/* line 24, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-header {
-  display: table;
-  width: 100%;
-  height: 40px;
-  padding: 15px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  z-index: 99999;
-  font-size: 30px; }
-  /* line 33, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  header .block-inner {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    border-bottom: 1px solid #eee; }
-  /* line 39, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  header h1 {
-    color: #000; }
+header { display: table; width: 100%; height: 40px; padding: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; z-index: 99999; font-size: 30px; }
 
-/* line 44, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-#form-block {
-  width: 335px;
-  margin: 10px auto 20px; }
-  /* line 16, /usr/local/development/TaskForGIg/_resource/task01/css/_mixin.scss */
-  #form-block::after {
-    content: "";
-    display: block;
-    clear: both; }
-  /* line 48, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  #form-block input[type="text"],
-  #form-block button {
-    float: left; }
-  /* line 52, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  #form-block input[type="text"] {
-    border: 1px solid #ccc;
-    padding: 3px 5px;
-    margin-right: 5px;
-    border-radius: 5px;
-    width: 250px;
-    height: 35px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 13px;
-    font-size: 1.3rem; }
-    /* line 63, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]:placeholder {
-      color: #ccc; }
-    /* line 66, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]:foucus:placeholder {
-      color: transparent; }
-    /* line 69, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]::-webkit-input-placeholder {
-      color: #ccc; }
-    /* line 72, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]:focus::-webkit-input-placeholder {
-      color: transparent; }
-    /* line 75, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]:-moz-placeholder {
-      color: #ccc;
-      opacity: 1; }
-    /* line 79, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]:foucus:-moz-placeholder {
-      color: transparent; }
-    /* line 82, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]:-ms-input-placeholder {
-      color: #ccc; }
-    /* line 85, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    #form-block input[type="text"]:focus::-ms-placeholder {
-      color: transparent; }
-  /* line 89, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  #form-block button {
-    width: 80px;
-    height: 35px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #eee;
-    color: #666;
-    font-size: 13px;
-    font-size: 1.3rem; }
+header .block-inner { display: table-cell; text-align: center; vertical-align: middle; border-bottom: 1px solid #eee; }
 
-/* line 101, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-.main-block_listBox {
-  width: 400px;
-  margin: 0 auto; }
-  /* line 104, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  .main-block_listBoxList {
-    border-bottom: dashed 1px #ccc;
-    padding: 0 5px 3px;
-    margin-bottom: 10px; }
-    /* line 16, /usr/local/development/TaskForGIg/_resource/task01/css/_mixin.scss */
-    .main-block_listBoxList::after {
-      content: "";
-      display: block;
-      clear: both; }
-    /* line 109, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxListTxt, .main-block_listBoxListBtn,
-    .main-block_listBoxList input[type="checkbox"] {
-      display: block;
-      box-sizing: border-box;
-      vertical-align: middle;
-      float: left; }
-    /* line 117, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxListTxt,
-    .main-block_listBoxList input[type="checkbox"] {
-      float: left; }
-    /* line 121, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxListTxt, .main-block_listBoxListBtn {
-      padding: 5px 0;
-      font-size: 13px;
-      font-size: 1.3rem; }
-    /* line 127, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxListTxt {
-      width: calc(81% - 40px);
-      position: relative; }
-      /* line 130, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-      .main-block_listBoxListTxt::before {
-        position: absolute;
-        content: "";
-        display: block;
-        top: calc(50% - 13px);
-        left: -25px;
-        width: 7px;
-        height: 15px;
-        border-right: 3px solid #333;
-        border-bottom: 3px solid #333;
-        transform: rotate(45deg);
-        display: none; }
-    /* line 144, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxListBtn {
-      float: right;
-      width: 19%;
-      text-align: center;
-      background-color: #808080;
-      color: #fff;
-      border-radius: 5px;
-      cursor: pointer; }
-      /* line 152, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-      .main-block_listBoxListBtn:hover {
-        background-color: #e1a2ba; }
-    /* line 156, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxList input[type="checkbox"] {
-      border: 1px solid #ccc;
-      width: 30px;
-      height: 30px;
-      margin-right: 5px; }
-    /* line 162, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxList input[type="checkbox"]:checked + .main-block_listBoxListTxt::before {
-      display: block; }
-    /* line 166, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .main-block_listBoxList.complete input[type="checkbox"] {
-      border: 1px solid #ccc;
-      background-color: #eee; }
-    /* line 171, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .complete .main-block_listBoxListTxt {
-      color: #999;
-      text-decoration: line-through; }
-      /* line 174, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-      .complete .main-block_listBoxListTxt::before {
-        border-right: 3px solid #ccc;
-        border-bottom: 3px solid #ccc; }
+header h1 { color: #000; }
 
-/* line 182, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-.box-removeMess {
-  display: block;
-  width: 400px;
-  margin: 25px auto;
-  display: none;
-  text-align: center;
-  font-size: 14px;
-  font-size: 1.4rem; }
-  /* line 190, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  .box-removeMessTxt {
-    color: #000; }
-  /* line 193, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  .box-removeMessBtn {
-    display: inline-block;
-    background-color: #808080;
-    color: #fff;
-    width: 100px;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer; }
-    /* line 203, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-    .box-removeMessBtn:hover {
-      background-color: #376fb8; }
-  /* line 207, /usr/local/development/TaskForGIg/_resource/task01/css/_style.scss */
-  .box-removeMessVisible {
-    display: block; }
+#main-block { width: 500px; margin: 10px auto; }
 
-/*# sourceMappingURL=global.css.map */
+#main-block::after { content: ""; display: block; clear: both; }
+
+#main-block .main-block_listBoxList { border-bottom: dashed 1px #ccc; padding-bottom: 3px; margin-bottom: 10px; }
+
+#main-block input[type="text"], #main-block button { float: left; }
+
+#main-block input[type="text"] { border: 1px solid #ccc; padding: 3px 5px; margin-left: 165px; margin-right: 5px; border-radius: 5px; width: 250px; height: 35px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 13px; font-size: 1.3rem; }
+
+#main-block input[type="text"]:placeholder { color: #ccc; }
+
+#main-block input[type="text"]:foucus:placeholder { color: transparent; }
+
+#main-block input[type="text"]::-webkit-input-placeholder { color: #ccc; }
+
+#main-block input[type="text"]:focus::-webkit-input-placeholder { color: transparent; }
+
+#main-block input[type="text"]:-moz-placeholder { color: #ccc; opacity: 1; }
+
+#main-block input[type="text"]:foucus:-moz-placeholder { color: transparent; }
+
+#main-block input[type="text"]:-ms-input-placeholder { color: #ccc; }
+
+#main-block input[type="text"]:focus::-ms-placeholder { color: transparent; }
+
+#main-block button { width: 80px; height: 35px; border: 1px solid #ccc; border-radius: 5px; background-color: #eee; color: #666; font-size: 13px; font-size: 1.3rem; }

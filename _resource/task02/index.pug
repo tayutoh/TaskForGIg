@@ -11,9 +11,10 @@ html#html(lang="ja")
 			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
 			script(src="js/script.js")
 	body
-		header
-			.block-inner
-				h1 Your Address
+		header.header
+			.header-inner
+				h1.header-til Your Address
 		form#form-block
-			input(type="text" placeholder="郵便番号を入力して下さい")
-			button(type="submit" name="Add Button" value="submit") Submit
+			p.form-block-text 郵便番号から住所を検索します。
+			input(type="text" placeholder="郵便番号を入力して下さい" value="" maxlength="7")
+			button(type="submit" name="Add Button" value="Search") Search
