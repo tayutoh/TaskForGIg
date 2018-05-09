@@ -1,5 +1,5 @@
-$breakpoints: ( 
-	'sm': 'screen and (min-width: 320px)',
+$breakpoints: (
+	'sm': 'screen and (max-width: 320px)',
 	'md': 'screen and (min-width: 800px)',
 	'mdMax': 'screen and (max-width: 799px)',
 ) !default;
