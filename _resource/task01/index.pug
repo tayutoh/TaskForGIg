@@ -8,16 +8,15 @@ html#html(lang="ja")
 		block css
 			link(rel="stylesheet" href="css/global.css")
 		block js
-			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
 			script(src="js/script.js")
 	body
 		header
 			.block-inner
 				h1 ToDo List
-		form
-			div#main-block
-				input(type="text" placeholder="ここにリストを入力して下さい")
-				button(type="submit" name="Add Button" value="Add list") Add List
-				
-				
-			
+		form#form-block
+			input(type="text" placeholder="ここにリストを入力して下さい")
+			button(type="submit" name="Add Button" value="Add list") Add ToDo
+		dl.box-removeMess
+			dt.box-removeMessTxt 削除してもよいですか？
+			dd.box-removeMessBtn Yes
