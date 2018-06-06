@@ -20,7 +20,7 @@ $(document).ready(function(){
 		.done((res) => {
 			// 中身が空でなければ、その値を［住所］欄に反映
 			if(res.results){
-				let results = res.results[0];
+				const results = res.results[0];
 				$main.html($mainTerm + '<dd class="main-description">' + results.address1 + results.address2 + results.address3 + '</dd>');
 			} else {
 				//エラーの場合
