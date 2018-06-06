@@ -41,17 +41,10 @@ header {
 	}
 }
 
-#main-block {
-	width: 500px;
-	margin: 10px auto;
+#form-block {
+	width: 335px;
+	margin: 10px auto 20px;
 	@include clearfix;
-	.main-block_listBox {
-		&List {
-			border-bottom: dashed 1px #ccc;
-			padding-bottom: 3px;
-			margin-bottom: 10px;
-		}
-	}
 	& input[type="text"],
 	& button {
 		float: left;
@@ -59,7 +52,6 @@ header {
 	& input[type="text"] {
 		border: 1px solid #ccc;
 		padding: 3px 5px;
-		margin-left: 165px;
 		margin-right: 5px;
 		border-radius: 5px;
 		width: 250px;
@@ -71,20 +63,28 @@ header {
 		&:placeholder {
 			color: #ccc;
 		}
-		&:foucus:placeholder{color: transparent;}
+		&:foucus:placeholder {
+			color: transparent;
+		}
 		&::-webkit-input-placeholder {
 			color: #ccc;
 		}
-		&:focus::-webkit-input-placeholder { color:transparent; }
+		&:focus::-webkit-input-placeholder {
+			color: transparent;
+		}
 		&:-moz-placeholder {
 			color: #ccc;
 			opacity: 1;
 		}
-		&:foucus:-moz-placeholder { color:transparent; }
+		&:foucus:-moz-placeholder {
+			color: transparent;
+		}
 		&:-ms-input-placeholder {
 			color: #ccc;
 		}
-		&:focus::-ms-placeholder { color:transparent; }
+		&:focus::-ms-placeholder {
+			color: transparent;
+		}
 	}
 	& button {
 		width: 80px;
@@ -95,5 +95,116 @@ header {
 		color: #666;
 		font-size: 13px;
 		font-size: 1.3rem;
+	}
+}
+
+.main-block_listBox {
+	width: 400px;
+	margin: 0 auto;
+	&List {
+		border-bottom: dashed 1px #ccc;
+		padding: 0 5px 3px;
+		margin-bottom: 10px;
+		@include clearfix;
+		&Txt,
+		&Btn,
+		& input[type="checkbox"] {
+			display: block;
+			box-sizing: border-box;
+			vertical-align: middle;
+			float: left;
+		}
+		&Txt,
+		& input[type="checkbox"] {
+			float: left;
+		}
+		&Txt,
+		&Btn {
+			padding: 5px 0;
+			font-size: 13px;
+			font-size: 1.3rem;
+		}
+		&Txt {
+			width: calc(81% - 40px);
+			position: relative;
+			&::before {
+				position: absolute;
+				content: "";
+				display: block;
+				top: calc(50% - 13px);
+				left: -25px;
+				width: 7px;
+				height: 15px;
+				border-right: 3px solid #333;
+				border-bottom: 3px solid #333;
+				transform: rotate(45deg);
+				display: none;
+			}
+		}
+		&Btn {
+			float: right;
+			width: 19%;
+			text-align: center;
+			background-color: #808080;
+			color: #fff;
+			border-radius: 5px;
+			cursor: pointer;
+			&:hover {
+				background-color: #e1a2ba;
+			}
+		}
+		& input[type="checkbox"] {
+			border: 1px solid #ccc;
+			width: 30px;
+			height: 30px;
+			margin-right: 5px;
+		}
+		& input[type="checkbox"]:checked + &Txt::before {
+			display: block;
+		}
+		&.complete {
+			& input[type="checkbox"] {
+				border: 1px solid #ccc;
+				background-color: #eee;
+			}
+		}
+		.complete &Txt {
+			color: #999;
+			text-decoration: line-through;
+			&::before {
+				border-right: 3px solid #ccc;
+				border-bottom: 3px solid #ccc;
+			}
+		}
+	}
+}
+
+.box-removeMess {
+	display: block;
+	width: 400px;
+	margin: 25px auto;
+	display: none;
+	text-align: center;
+	font-size: 14px;
+	font-size: 1.4rem;
+	&Txt {
+		color: #000;
+	}
+	&Btn {
+		display: inline-block;
+		background-color: #808080;
+		color: #fff;
+		width: 100px;
+		padding: 5px;
+		box-sizing: border-box;
+		margin-top: 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		&:hover {
+			background-color: #376fb8;
+		}
+	}
+	&Visible {
+		display: block;
 	}
 }

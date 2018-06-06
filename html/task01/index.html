@@ -10,7 +10,7 @@
     <meta name="description" content="HTML5,CSS3,jQueryが三度の飯より大好物！！レスポンシブサイトが大得意！！">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="css/global.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -19,11 +19,13 @@
         <h1>ToDo List</h1>
       </div>
     </header>
-    <form>
-      <div id="main-block">
-        <input type="text" placeholder="ここにリストを入力して下さい">
-        <button type="submit" name="Add Button" value="Add list">Add List</button>
-      </div>
+    <form id="form-block">
+      <input type="text" placeholder="ここにリストを入力して下さい">
+      <button type="submit" name="Add Button" value="Add list">Add ToDo</button>
     </form>
+    <dl class="box-removeMess">
+      <dt class="box-removeMessTxt">削除してもよいですか？</dt>
+      <dd class="box-removeMessBtn">Yes</dd>
+    </dl>
   </body>
 </html>
