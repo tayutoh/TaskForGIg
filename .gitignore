@@ -57,6 +57,14 @@ typings/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
+# DS_Store
+.DS_Store
+
+# map
+.map
+=======
 #.DS_Store
 .DS_Store
 
+>>>>>>> develop

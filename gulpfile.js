@@ -63,9 +63,9 @@ gulp.task('pug_all', function buildHTML() {
 gulp.task('sass', function() {
   return gulp.src([
     '_resource/**/*.scss',
-		'_resource/**/**/*.scss',
-		'_resource/**/**/**/*.scss',
-		'!_resource/**/_*.scss'
+	'_resource/**/**/*.scss',
+	'_resource/**/**/**/*.scss',
+	'!_resource/**/_*.scss'
   ])
   .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
   .pipe(autoprefixer({

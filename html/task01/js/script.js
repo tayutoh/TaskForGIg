@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$inputList = $('input[type=text]'),
 		$listArea = $('<ul class="main-block_listBox">'),
 		strageList = localStorage['todo.list'];
-
+		
 	if (strageList && strageList.length > 2) {
 			$form.after($listArea);
 			JSON.parse(strageList).forEach(function (item) {
